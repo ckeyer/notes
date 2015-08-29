@@ -1,4 +1,5 @@
 .htaccess
+.DS_Store
 css.php
 rpc/
 sites/site*/admin/

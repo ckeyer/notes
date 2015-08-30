@@ -1,2 +1,2 @@
 # notes
-my Notes
+详见[个人博客](http://blog.ckeyer.com/)

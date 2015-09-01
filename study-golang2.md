@@ -3,8 +3,8 @@ author: ckeyer
 head: http://blog.ckeyer.com/blog/img/logo_l.jpg
 date: 2015-08-30
 title: Golang中的map
-tags: 编程语言，Golang, map
-category: Golang学习笔记
+tags: 编程语言，Golang, 数据结构
+category: Golang, 学习笔记
 status: publish
 summary: 学习golang中的map。
 -->

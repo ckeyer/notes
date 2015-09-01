@@ -3,8 +3,8 @@ author: ckeyer
 head: http://blog.ckeyer.com/blog/img/logo_l.jpg
 date: 2015-08-29
 title: HashMap和TreeMap
-tags: 数据结构，hashmap, treemap
-category: Golang学习笔记
+tags: 编程语言, 数据结构，Golang
+category: Golang, 学习笔记
 status: publish
 summary: 简单介绍一下HashMap和TreeMap的实现和区别。
 -->

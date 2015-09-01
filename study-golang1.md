@@ -3,8 +3,8 @@ author: ckeyer
 head: http://blog.ckeyer.com/blog/img/logo_l.jpg
 date: 2015-08-28
 title: Golang中的字符串和数组
-tags: 编程语言，Golang, string, array, slice
-category: Golang学习笔记
+tags: 编程语言，Golang, 数据结构
+category: Golang, 学习笔记
 status: publish
 summary: 轻触一下Golang皮毛。
 -->

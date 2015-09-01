@@ -3,8 +3,8 @@ author: ckeyer
 head: http://blog.ckeyer.com/blog/img/logo_l.jpg
 date: 2015-08-31
 title: Golang中类型的初始化
-tags: 编程语言，Golang, make, new
-category: Golang学习笔记
+tags: 编程语言，Golang
+category: Golang, 学习笔记
 status: publish
 summary: Go 语言中的 new 和 make 一直是新手比较容易混淆的东西，咋一看很相似。不过解释两者之间的不同也非常容易。
 -->
@@ -33,6 +33,7 @@ type T struct{
 }
 ```
 1. 指针
+
 ```
 t1 := new(T)
 t2 := &T{}

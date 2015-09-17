@@ -1,19 +1,22 @@
 <!--
-author: ckeyer
-head: http://blog.ckeyer.com/blog/img/logo_l.jpg
-date: 2015-08-28
-title: Golang中的字符串和数组
-tags: 编程语言，Golang, 数据结构
-category: Golang, 学习笔记
-status: publish
-summary: 轻触一下Golang皮毛。
+{
+"author": "ckeyer",
+"name": "test1",
+"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"date": "2015-08-28",
+"title": "Golang中的字符串和数组",
+"tags": ["Golang", "数据结构"],
+"category": ["Golang", "学习笔记"],
+"status": "publish",
+"summary": "轻触一下Golang皮毛。"
+}
 -->
  * [字符串](#字符串)
  * [数组](#数组)
  * [切片](#切片)
   * [slice的扩容](#slice的扩容)
 
-### 字符串
+<h3 id="字符串">字符串</h3>
 字符串在Go语言内存模型中用一个2字长的数据结构表示。它包含一个指向字符串存储数据的指针和一个长度数据。因为string类型是不可变的，对于多字符串共享同一个存储数据是安全的。切分操作str[i:j]会得到一个新的2字长结构，一个可能不同的但仍指向同一个字节序列(即上文说的存储数据)的指针和长度数据。这意味着字符串切分可以在不涉及内存分配或复制操作。这使得字符串切分的效率等同于传递下标。
 
 ### 数组

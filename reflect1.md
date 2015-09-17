@@ -1,12 +1,15 @@
 <!--
-author: ckeyer
-head: http://blog.ckeyer.com/blog/img/logo_l.jpg
-date: 2015-09-01
-title: Go语言反射规则-The Laws of Reflection
-tags: 编程语言，Golang, reflect, 
-category: 好文分享, Golang, 翻译
-status: publish
-summary: 由官方博客翻译而来，关于golang中反射的实现及原理。
+{
+"name": "20150901",
+"author": "ckeyer",
+"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"date": "2015-09-01",
+"title": "Go语言反射规则-The Laws of Reflection",
+"tags": ["编程语言", "Golang", "reflect"],
+"category": ["好文分享", "Golang", "翻译"],
+"status": "publish",
+"summary": "由官方博客翻译而来，关于golang中反射的实现及原理。",
+}
 -->
 
 原文地址：[http://blog.golang.org/laws-of-reflection](http://blog.golang.org/laws-of-reflection)

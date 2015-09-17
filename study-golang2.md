@@ -1,18 +1,17 @@
 <!--
 {
 "author":"ckeyer",
-"name": "test2",
+"name": "20150704",
 "head":"http://blog.ckeyer.com/blog/img/logo_l.jpg",
-"date":"2015-08-30",
+"date":"2015-07-04",
 "title":"Golang中的map",
 "tags":["编程语言", "Golang", "数据结构"],
-"category":["Golang"],
+"category":["学习笔记"],
 "status":"publish",
 "summary":"学习golang中的map"
 }
 -->
 
-*[]()
 
 ### 数据结构
 go语言中map在底层是通过哈希表实现的，以下为hmap中其中几个关键属性（源码在$GOROOT/src/pkg/runtime/hashmap.go）:

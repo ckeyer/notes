@@ -8,7 +8,7 @@
 "tags": ["编程语言", "Golang", "reflect"],
 "category": ["好文分享", "Golang", "翻译"],
 "status": "publish",
-"summary": "由官方博客翻译而来，关于golang中反射的实现及原理。",
+"summary": "由官方博客翻译而来，关于golang中反射的实现及原理。"
 }
 -->
 

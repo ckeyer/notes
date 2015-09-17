@@ -1,6 +1,6 @@
 <!--
 {
-"name":"201508"
+"name":"201508",
 "author": "ckeyer",
 "head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
 "date": "2015-08-29",

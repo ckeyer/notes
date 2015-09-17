@@ -6,7 +6,7 @@
 "date": "2015-07-03",
 "title": "Golang中的字符串和数组",
 "tags": ["Golang", "数据结构"],
-"category": ["学习笔记"],
+"category": ["学习笔记", "Golang"],
 "status": "publish",
 "summary": "轻触一下Golang皮毛。"
 }

@@ -6,7 +6,7 @@
 "date":"2015-07-04",
 "title":"Golang中的map",
 "tags":["编程语言", "Golang", "数据结构"],
-"category":["学习笔记"],
+"category":["学习笔记", "Golang"],
 "status":"publish",
 "summary":"学习golang中的map"
 }

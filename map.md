@@ -5,7 +5,7 @@
 "head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
 "date": "2015-04-03",
 "title": "HashMap和TreeMap",
-"tags": ["数据结构", "hash"],
+"tags": ["数据结构", "Hash"],
 "category": ["学习笔记"],
 "status": "publish",
 "summary": "简单介绍一下HashMap和TreeMap的实现和区别。"

@@ -6,7 +6,7 @@
 "date": "2015-07-06",
 "title": "Golang中类型的初始化",
 "tags": ["编程语言", "Golang"],
-"category": ["学习笔记"],
+"category": ["学习笔记","Golang"],
 "status": "publish",
 "summary": "Go 语言中的 new 和 make ,一直是新手比较容易混淆的东西，咋一看很相似。不过解释两者之间的不同也非常容易。"
 }

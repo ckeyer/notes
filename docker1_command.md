@@ -9,7 +9,7 @@
 "category": ["学习笔记"],
 "status": "publish",
 "summary": "docker 中run,commit的使用"
-}I
+}
 -->
 
 首先要说的是Docker中的镜像。镜像类似于已经包含了文件、配置和安装好的程序的虚拟机镜像。同样的，也可以像启动虚拟机一样启动多个镜像实例。运行中的镜像称为容器。可以修改容器（比如删除一个文件），但这些修改不会影响到镜像。不过，使用docker commit <container-id> <image-name>命令可以把一个正在运行的容器变成一个新的镜像。

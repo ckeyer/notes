@@ -2,7 +2,7 @@
 {
 "name":"201501021",
 "author": "ckeyer",
-"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"head": "http://moefq.com/images/2015/11/23/2341564017cc8b9a8e6a19963f82125b.png",
 "date": "2015-10-21",
 "title": "Docker学习笔记2-Docker源码编译",
 "tags": ["Docker", "Golang"],

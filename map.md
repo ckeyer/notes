@@ -2,7 +2,7 @@
 {
 "name":"20150403",
 "author": "ckeyer",
-"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"head": "http://moefq.com/images/2015/11/23/2341564017cc8b9a8e6a19963f82125b.png",
 "date": "2015-04-03",
 "title": "HashMap和TreeMap",
 "tags": ["数据结构", "Hash"],

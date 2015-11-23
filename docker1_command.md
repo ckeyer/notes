@@ -2,7 +2,7 @@
 {
 "name":"201501019",
 "author": "ckeyer",
-"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"head": "http://moefq.com/images/2015/11/23/2341564017cc8b9a8e6a19963f82125b.png",
 "date": "2015-10-19",
 "title": "Docker学习笔记1",
 "tags": ["Docker"],
@@ -40,7 +40,7 @@ bin    dev    etc    home   proc   root   sys    tiger  tmp    usr    var
 ```
 以上的tiger为一个以当前目录为根目录的文件服务器，端口8080.
 访问 http://192.168.59.103:8080/ 可以看到
-![](img/docker_web1.jpg)
+![](http://moefq.com/images/2015/11/23/799f2024c204ff4628ea14bccbe2b745.md.jpg)
 
 ```
 / # exit

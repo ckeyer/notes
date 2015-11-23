@@ -2,7 +2,7 @@
 {
 "author":"ckeyer",
 "name": "20150704",
-"head":"http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"head":"http://moefq.com/images/2015/11/23/2341564017cc8b9a8e6a19963f82125b.png",
 "date":"2015-07-04",
 "title":"Golang中的map",
 "tags":["编程语言", "Golang", "数据结构"],

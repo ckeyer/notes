@@ -6,7 +6,7 @@
 "date": "2015-10-19",
 "title": "Docker学习笔记1",
 "tags": ["Docker"],
-"category": ["学习笔记"],
+"category": ["学习笔记","CaaS"],
 "status": "publish",
 "summary": "docker 中run,commit的使用"
 }

@@ -2,7 +2,7 @@
 {
 "author": "ckeyer",
 "name": "20150706",
-"head": "http://blog.ckeyer.com/blog/img/logo_l.jpg",
+"head": "http://moefq.com/images/2015/11/23/2341564017cc8b9a8e6a19963f82125b.png",
 "date": "2015-07-06",
 "title": "Golang中类型的初始化",
 "tags": ["编程语言", "Golang"],

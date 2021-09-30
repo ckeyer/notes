@@ -1,6 +1,10 @@
 # 信息收集
 
 * https://blog.csdn.net/alex_yangchuansheng/article/details/102796001
+* https://blog.csdn.net/weixin_39219503/article/details/106888174
+
+
+# Linux Capability机制
 
 # 
 

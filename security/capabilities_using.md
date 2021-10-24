@@ -8,15 +8,22 @@
 
 ## 相关命令
 
+### getcap
+
+`getcap [-v] [-r] [-h] filename [ ... ]`
+
+```bash
+test :: ~ Â»getcap /usr/bin/ping
+/usr/bin/ping = cap_net_admin,cap_net_raw+p
+```
+
 ### setcap
 
 `setcap [-q] [-v] (capabilities|-|-r) filename [ ... capabilitiesN fileN ]`
 
 给指定的文件设置特权能力
 
-### getcap
 
-### setpcap
 
 ## 示例
 

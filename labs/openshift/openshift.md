@@ -36,3 +36,19 @@ sed -i -e "s/^enabled=1/enabled=0/" /etc/yum.repos.d/epel.repo
 
 systemctl daemon-reload
 systemctl restart docker.service
+
+175.178.27.45:8443
+
+
+oc config set-cluster tcss --server=https:/175.178.27.45:8443 --certificate-authority=./kube-apiserver/ca.crt --embed-certs=true --kubeconfig=./tcss.conf
+
+# 创建并设置用户配置
+kubectl config set-credentials tcss --client-certificate=tcss.crt --client-key=tcss.key --embed-certs=true --kubeconfig=/root/tcss.conf
+
+# 设置context配置
+kubectl config set-context tcss@tcss --cluster=tcss --user=tcss --kubeconfig=/root/tcss.conf
+
+# 切换context配置
+kubectl config use-context tcss@tcss --kubeconfig=/root/tcss.conf
+
+

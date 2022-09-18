@@ -40,15 +40,41 @@ systemctl restart docker.service
 175.178.27.45:8443
 
 
-oc config set-cluster tcss --server=https:/175.178.27.45:8443 --certificate-authority=./kube-apiserver/ca.crt --embed-certs=true --kubeconfig=./tcss.conf
+KUBECONFIG=./tcss.conf oc config set-cluster tcss --server=https:/175.178.27.45:8443 --certificate-authority=./kube-apiserver/ca.crt --embed-certs=true --kubeconfig=./tcss.conf
 
 # 创建并设置用户配置
-kubectl config set-credentials tcss --client-certificate=tcss.crt --client-key=tcss.key --embed-certs=true --kubeconfig=/root/tcss.conf
+KUBECONFIG=./tcss.conf oc config set-credentials tcss --client-certificate=tcss.crt --client-key=tcss.key --embed-certs=true --kubeconfig=./tcss.conf
 
 # 设置context配置
-kubectl config set-context tcss@tcss --cluster=tcss --user=tcss --kubeconfig=/root/tcss.conf
+KUBECONFIG=./tcss.conf oc config set-context tcss@tcss --cluster=tcss --user=tcss --kubeconfig=./tcss.conf
 
 # 切换context配置
-kubectl config use-context tcss@tcss --kubeconfig=/root/tcss.conf
+KUBECONFIG=./tcss.conf oc config use-context tcss@tcss --kubeconfig=./tcss.conf
 
+oc cluster up --public-hostname=175.178.27.45 --base-dir=/opt/clus2 --skip-registry-check
+--https-proxy=175.178.27.45:8443 --public-hostname=175.178.27.45
+
+
+KUBECONFIG=./kube-apiserver/admin.kubeconfig oc get node
+
+
+
+
+# 创建User私钥 tcss.key。
+openssl genrsa -out ./tcss.key 2048
+# 创建证书签署请求 tcss.csr
+openssl req -new -key ./tcss.key -out ./tcss.csr -subj "/O=K8s/CN=tcss"
+# 签署证书 生成 tcss.crt
+openssl x509 -req -in ./tcss.csr -CA ./kube-apiserver/ca.crt -CAkey ./kube-apiserver/ca.key -CAcreateserial -out ./tcss.crt -days 365
+
+# 创建并设置集群配置
+oc config set-cluster tcss --server=$API_SERVER --certificate-authority=$CA_FILE --embed-certs=true --kubeconfig=$KUBECONFIG_TARGET
+# 创建并设置用户配置
+oc config set-credentials tcss --client-certificate=./tcss.crt --client-key=./tcss.key --embed-certs=true --kubeconfig=$KUBECONFIG_TARGET
+# 设置context配置
+oc config set-context tcss@tcss --cluster=tcss --user=tcss --kubeconfig=$KUBECONFIG_TARGET
+# 切换context配置
+oc config use-context tcss@tcss --kubeconfig=$KUBECONFIG_TARGET
+
+echo "generate KUBECONFIG file success. $KUBECONFIG_TARGET"
 
